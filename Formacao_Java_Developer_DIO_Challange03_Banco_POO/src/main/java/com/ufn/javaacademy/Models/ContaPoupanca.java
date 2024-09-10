@@ -10,7 +10,7 @@ public class ContaPoupanca extends Conta {
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato com.ufn.javaacademy.Interfaces.Conta Poupan�a ===");
+		System.out.println("=== Extrato com.ufn.javaacademy.Interfaces.Conta Poupanca ===");
 		super.imprimirInfosComuns();
 	}
 }
