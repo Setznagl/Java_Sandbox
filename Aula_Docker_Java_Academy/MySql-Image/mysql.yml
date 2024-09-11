@@ -1,0 +1,24 @@
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'DOCKERDB'
+      # Cria um usuário de nome admin
+      MYSQL_USER: 'admin'
+      # Define a senha para o usuário admin
+      MYSQL_PASSWORD: 'root'
+      # Define a senha do usuário root
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      # <Porta hospedeiro> : <Porta do container>
+      - '3306:3306'
+    expose:
+      # Abre a porta 3306 no container
+      - '3306'
+      # Volume para armazenar os dados
+    volumes:
+      - mysql-db:/var/lib/mysql
+# Nome do volume criado
+volumes:
+  mysql-db:
