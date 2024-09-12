@@ -1,6 +1,6 @@
 <p align="center">
   
-<h1 align="center"> Exercícios - Sétima Academia Java Atos </h1><br>
+<h1 align="center"> Exercícios - Sétima Academia Java</h1><br>
 
 <div align="center">
     <img alt="Logo UFN" width="25%" src="https://site.ufn.edu.br/img/marcaUFN.6b48e203.png">
