@@ -3,12 +3,12 @@
 <h1 align="center"> Exercícios - Sétima Academia Java Atos </h1><br>
 
 <div align="center">
-    <img alt="Logo Atos" width="25%" src="https://atos.net/content/assets/global-images/atos-logo-blue-2023.svg">
+    <img alt="Logo UFN" width="25%" src="https://site.ufn.edu.br/img/marcaUFN.6b48e203.png">
     <img alt="Java" width="25%" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-    <img alt="Logo Atos" width="25%" src="https://site.ufn.edu.br/img/marcaUFN.6b48e203.png">
+    <img alt="Logo UFN" width="25%" src="https://site.ufn.edu.br/img/marcaUFN.6b48e203.png">
 <div><br><br>
   
-<h2>Este repositório é dedicado a armazenar as atividades obrigatórias e sugeridas realizadas durante a Sétima Academia Java da Atos.</h2> 
+<h2>Este repositório é dedicado a armazenar as atividades obrigatórias e sugeridas realizadas durante a Sétima Academia Java.</h2> 
 
 <p>
 Ele serve como um portfólio digital que demonstra o progresso e as habilidades adquiridas ao longo dos três meses de curso sendo uma prova do meu engajamento e motivação durante o projeto.
