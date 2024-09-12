@@ -17,5 +17,5 @@ A equipe avaliadora é muito bem vinda para revisar o código e avaliar o entend
 </p>
 
 <p>
-Meus agradecimentos à Atos e à Universidade Franciscana pela oportunidade e para mais informações <a href="https://www.linkedin.com/in/gabriel-setznagl/">visite meu perfil no Linkedin.</a>
+Meus agradecimentos à Universidade Franciscana pela oportunidade e para mais informações <a href="https://www.linkedin.com/in/gabriel-setznagl/">visite meu perfil no Linkedin.</a>
 </p>
