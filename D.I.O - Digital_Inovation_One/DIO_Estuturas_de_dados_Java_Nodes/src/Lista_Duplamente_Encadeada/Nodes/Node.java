@@ -98,27 +98,30 @@ public class Node {
         }
 
         //Falta validações se o item é a cauda
-        public void addNode(Node newNode) {
+        public void addNode(Node... newNodes) {
+            for (Node newNode : newNodes) {
 
-            Node current = this.head;
-            int indexIterator = 0;
+                Node current = this.head;
+                int indexIterator = 0;
 
-            if (head == null) {
-                head = newNode;
-                tail = newNode;
-            } else {
-                while (current.nextNode != null) {
-                    indexIterator++;
+                if (head == null) {
+                    head = newNode;
+                } else {
+                    while (current.nextNode != null) {
+                        indexIterator++;
+                        current.nextNode.previousNode = current;
+                        current = current.nextNode;
+                    }
+                    current.nextNode = newNode;
                     current.nextNode.previousNode = current;
-                    current = current.nextNode;
+                    tail = newNode;
                 }
-                current.nextNode = newNode;
-                current.nextNode.previousNode = current;
+                newNode.index = indexIterator;
+                this.size++;
+                setListIndexes();
             }
-            newNode.index = indexIterator;
-            this.size++;
-            setListIndexes();
         }
+
         public void addNodeAtIndex(Node newNode, int indexParameter) {
             Node current = this.head;
             newNode.setIndex(indexParameter);
@@ -132,18 +135,24 @@ public class Node {
                 int currentIndex = 0;
 
                 assert current != null;
-                while (current != null && currentIndex < indexParameter - 1) {
+                while (currentIndex < indexParameter - 1) {
+                    current.nextNode.previousNode = current;
                     current = current.nextNode;
                     currentIndex++;
                 }
-                assert current != null;
                 tempManipulatedNode = current.nextNode;
+                if(current.nextNode == null){
+                    current.nextNode = newNode;
+                    tail = newNode;
+                }else{
                 current.nextNode = newNode;
+                }
                 newNode.nextNode = tempManipulatedNode;
             }
             this.size++;
             setListIndexes();
         }
+
         public void removeAtIndex(Integer indexParameter) {
 
             Node current = this.head;
