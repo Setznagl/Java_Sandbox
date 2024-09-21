@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SetHeterogeneoMain {
+    @SuppressWarnings({"rawtypes" , "unchecked"})
     public static void main(String[] args) {
         /**
          * o Set aponta "warning" porque não é boa prática conjuntos com objetos ou wrappers diferentes
@@ -12,7 +13,7 @@ public class SetHeterogeneoMain {
          *
          * //
          */
-        Set ConjuntoDesorganizado = new HashSet<>();
+        Set ConjuntoDesorganizado = new HashSet();
         System.out.println(ConjuntoDesorganizado.getClass());
 
             int numero01 = 1;

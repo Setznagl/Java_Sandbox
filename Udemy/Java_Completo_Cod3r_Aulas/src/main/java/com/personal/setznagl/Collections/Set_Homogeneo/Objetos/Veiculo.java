@@ -9,17 +9,21 @@ import java.util.Scanner;
 @Getter
 @Setter
 public abstract class Veiculo implements Motorizado {
-    protected String placa;
     protected String modelo;
+    protected String placa;
     protected String cor;
     protected Integer velocidade;
     private final Scanner input = new Scanner(System.in);
 
     public Veiculo() {
+
+    }
+
+    protected Veiculo(boolean construindoNaPropriaClasse){
         this.modelo = input.nextLine();
-        this.placa = input.nextLine();
+        this.placa = "#AJ542Z";
         this.cor = input.nextLine();
-        this.velocidade = input.nextInt();
+        this.velocidade = 0;
     }
 
     public Veiculo(String modeloParametro, String placaParametro, String corParametro, int velocidadeParametro) {

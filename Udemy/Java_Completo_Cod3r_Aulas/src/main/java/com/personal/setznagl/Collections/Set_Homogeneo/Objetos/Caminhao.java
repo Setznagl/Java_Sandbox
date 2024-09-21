@@ -2,7 +2,8 @@ package com.personal.setznagl.Collections.Set_Homogeneo.Objetos;
 
 public class Caminhao extends Veiculo{
     public Caminhao(){
-       super();
+       //super() é chamado implicitamente a menos que seja sobrescrito por outro super( outro ) ou this()
+       super(true);
     }
 
     @Override
@@ -12,10 +13,6 @@ public class Caminhao extends Veiculo{
 
     @Override
     public String toString() {
-        return "Caminhao{" +
-                "cor='" + cor + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", placa='" + placa + '\'' +
-                '}';
+        return  "Caminhao [" + modelo + " (placa) " + placa + " (cor) " + cor + ']';
     }
 }
