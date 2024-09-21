@@ -20,6 +20,7 @@ public class Main {
 
         //System.out.println(Calculo.validacao()); //contexto de instancia, não pode ser referenciado pela classe
         System.out.println(soma.validacao());
+        //
 
     }
 }
