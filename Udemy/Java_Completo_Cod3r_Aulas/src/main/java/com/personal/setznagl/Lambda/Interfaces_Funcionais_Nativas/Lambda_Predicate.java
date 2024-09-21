@@ -16,7 +16,7 @@ public class Lambda_Predicate {
             return (produtoParametro.preco *(1 - produtoParametro.desconto))  >= 750.0;
         });
 
-        System.out.println(isExpensive.test(produto1));
+        System.out.println(isExpensive.test(produto1));//
     }
 
 }
