@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @Getter
 @Setter
-public class Produto {
+class Produto {
     private String nome;
     private String codigoDeBarras;
     private Date dataDeFabricacao;
