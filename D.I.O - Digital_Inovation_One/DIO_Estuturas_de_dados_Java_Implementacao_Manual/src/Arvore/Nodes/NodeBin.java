@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class NodeBin<T extends Comparable<T>>{
+public class NodeBin<T> implements Comparable<T> {
     private T content;
     private NodeBin<T> leftNode;
     private NodeBin<T> rightNode;
@@ -21,7 +21,7 @@ public class NodeBin<T extends Comparable<T>>{
     }
 
     @Override
-    public int compareTo(Object otherNodeBin) {
+    public int compareTo(T o) {
         return 0;
     }
 }

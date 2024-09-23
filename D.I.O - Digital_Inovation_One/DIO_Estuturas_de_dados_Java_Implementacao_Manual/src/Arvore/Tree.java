@@ -47,4 +47,39 @@ public class Tree<T extends Comparable<T>> {
             showPreOrder(currentNode.getRightNode());
         }
     }
+
+    public void showPosOrder(){
+        System.out.println("\nDisplaying post order: ");
+        showPosOrder(this.rootNode);}
+    private void showPosOrder(NodeBin<T> currentNode){
+        if(currentNode != null){
+            System.out.println(currentNode.getContent());
+            showPosOrder(currentNode.getLeftNode());
+            showPosOrder(currentNode.getRightNode());
+        }
+    }
+
+    public void remove(T content){
+        try {
+           NodeBin<T> atual = this.rootNode;
+           NodeBin<T> pai = null;
+           NodeBin<T> filho = null;
+           NodeBin<T> temp = null;
+
+           while(atual != null && !atual.getContent().equals(content)){
+               pai = atual;
+               if(content.compareTo(atual.getContent()) < 0){
+                   atual = atual.getLeftNode();
+               }else {
+                   atual = atual.getRightNode();
+               }
+           }
+           if(atual == null){
+               System.out.println("Conteúdo não encontrado no bloco Try()!");
+           }
+
+        }catch (NullPointerException erro){
+            System.out.println("Conteúdo não encontrado no bloco Catch()!");
+        }
+    }
 }

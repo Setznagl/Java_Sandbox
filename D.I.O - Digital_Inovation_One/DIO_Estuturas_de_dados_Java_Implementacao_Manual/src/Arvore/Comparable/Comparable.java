@@ -1,5 +1,5 @@
 package Arvore.Comparable;
 
-public abstract class Comparable<T> {
+public interface Comparable<T> {
     public abstract int compareTo();
 }
