@@ -3,7 +3,7 @@ package StreamDataObjects;
 import java.io.*;
 import java.util.Scanner;
 
-public class Exercicio_IO_DataObject_01 {
+public class Exercicio_IO_Data_01 {
     public static void main(String[] args) throws IOException {
         incluirProduto();
     }
@@ -11,9 +11,7 @@ public class Exercicio_IO_DataObject_01 {
 
     public static void incluirProduto() throws IOException {
 
-        File f = new File("C:\\Users\\a920062\\Desktop\\Repostórios Clonados\\Sandbox_Java" +
-                "\\D.I.O - Digital_Inovation_One\\Conceitos_Input-Output\\src\\main\\java" +
-                "\\StreamDataObjects\\eletronico.bin");
+        File f = new File("src/main/java/StreamDataObjects/eletronico.bin");
 
         PrintStream ps = new PrintStream(System.out);
         ps.flush();
