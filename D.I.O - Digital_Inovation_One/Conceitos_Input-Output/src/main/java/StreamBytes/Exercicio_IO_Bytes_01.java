@@ -8,8 +8,7 @@ public class Exercicio_IO_Bytes_01 {
     }
 
     public static void copiarArquivo() throws IOException {
-        File f = new File("C:\\Users\\a920062\\Desktop\\Repostórios Clonados" +
-        "\\Sandbox_Java\\D.I.O - Digital_Inovation_One\\Conceitos_Input-Output\\Designer.jpeg");
+        File f = new File("Designer.jpeg");
         String fName = f.getName();
 
         /*  InputStream is = new FileInputStream(f.getName());
