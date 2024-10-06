@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
-public class assertionsTeste {
+public class AssertionsTest {
 
     @Test
     void validarLancamento(){
